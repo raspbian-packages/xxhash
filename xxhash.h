@@ -807,7 +807,7 @@ XXH_PUBLIC_API XXH128_hash_t XXH128(const void* data, size_t len, XXH64_hash_t s
  */
 #ifndef XXH_FORCE_MEMORY_ACCESS   /* can be defined externally, on command line for example */
 #  if !defined(__clang__) && defined(__GNUC__) && defined(__ARM_FEATURE_UNALIGNED) && defined(__ARM_ARCH) && (__ARM_ARCH == 6)
-#    define XXH_FORCE_MEMORY_ACCESS 2
+#    define XXH_FORCE_MEMORY_ACCESS 1
 #  elif !defined(__clang__) && ((defined(__INTEL_COMPILER) && !defined(_WIN32)) || \
   (defined(__GNUC__) && (defined(__ARM_ARCH) && __ARM_ARCH >= 7)))
 #    define XXH_FORCE_MEMORY_ACCESS 1
