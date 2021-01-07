@@ -1,0 +1,2 @@
+reproducible-build.patch
+fix-unaligned-access-on-armv6.patch
