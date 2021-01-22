@@ -1,9 +1,19 @@
-xxhash (0.8.0-1+rpi1) bullseye-staging; urgency=medium
+xxhash (0.8.0-2+rpi1) bullseye-staging; urgency=medium
 
+  [changes brought forward from 0.8.0-1+rpi1 by Peter Michael Green <pluwash@raspbian.org> at Thu, 07 Jan 2021 21:20:41 +0000]
   * Use XXH_FORCE_MEMORY_ACCESS 1 instead of XXH_FORCE_MEMORY_ACCESS 2
     on armv6 to fix unaligned access issue.
 
- -- Peter Michael Green <pluwash@raspbian.org>  Thu, 07 Jan 2021 21:20:41 +0000
+ -- Raspbian forward porter <root@raspbian.org>  Fri, 22 Jan 2021 12:43:57 +0000
+
+xxhash (0.8.0-2) unstable; urgency=medium
+
+  * Use hardware-accelerated XXH3 computation on x86 architecture, and
+    install the hardware-accelerating header file. 
+    Thanks to Julian Andres Klode. (Closes: #977345)
+  * Cherry-pick upstream: Fix empty version in .pc file (Closes: #979758)
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 11 Jan 2021 21:57:57 +0900
 
 xxhash (0.8.0-1) unstable; urgency=medium
 
