@@ -1,0 +1,15 @@
+Description: Make the build reproducible
+Author: Chris Lamb <lamby@debian.org>
+Last-Update: 2023-09-12
+
+--- xxhash.orig/libxxhash.pc.in
++++ xxhash/libxxhash.pc.in
+@@ -2,7 +2,7 @@
+ #   Copyright (C) 2012-2021, Yann Collet, Facebook
+ #   BSD 2-Clause License (https://www.opensource.org/licenses/bsd-license.php)
+ 
+-prefix=@PREFIX@
++prefix=/usr
+ exec_prefix=@EXECPREFIX@
+ includedir=@INCLUDEDIR@
+ libdir=@LIBDIR@
