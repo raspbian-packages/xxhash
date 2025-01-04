@@ -1,0 +1,4 @@
+usr/bin/xxhsum
+usr/bin/xxh32sum
+usr/bin/xxh64sum
+usr/bin/xxh128sum
